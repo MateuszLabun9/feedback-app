@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import React, { Component }  from 'react';
 
 function Button({ children, version, type, isDisabled }) {
   return (
