@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+## Simple feedback application to leave comments
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aim of this app was to do some excercise with react to create small web application. It is connected with json-server which is providing data. In Context component all REST calls are being proceed allowing user to create, edit, and delete each of feedback. In addition there was an About page added which is using React-router. 
 
-## Available Scripts
+![image](https://user-images.githubusercontent.com/44081987/198843820-7f0cea1f-0a26-4436-b218-e5865f4f0a1a.png)
 
-In the project directory, you can run:
+## Edition of feedback 
+Every comment can be edited by simply clicking edit icon visible on each of feedback component. When edition button is clicked object is read from datebase and it is available for a update, user can update description and rating as well. After clicking save button, data is updated in database. On the example below we are updating first comment wiht change of description and rating.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![image](https://user-images.githubusercontent.com/44081987/198843832-54314f1e-15db-4148-af0f-dfdddd80f285.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+After saving changes, first feedback comment have got changed. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+![image](https://user-images.githubusercontent.com/44081987/198843854-494d726b-7c4d-43f2-8891-9c53e6f84e5a.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deletion of feedback comment. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+On each of feedback comments there is an delete icon, after clicking on it, there would be an question displayed if user is sure and if it really wants to delete this item. In the example below we are going to delete last comment, after clicking ok on the window displayed at the top, component with comment is being deleted.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://user-images.githubusercontent.com/44081987/198843896-3eda3e70-c038-4ed9-9a41-86a550beb810.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Last comment was succesfully deleted from page and from database. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://user-images.githubusercontent.com/44081987/198843914-cbfc7a81-3892-4542-a411-ecd2204f268c.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## About page
 
-## Learn More
+This project also contains about section where react-router was used. 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![image](https://user-images.githubusercontent.com/44081987/198843876-824262fd-8cf5-408e-9677-95f57fa38dca.png)
